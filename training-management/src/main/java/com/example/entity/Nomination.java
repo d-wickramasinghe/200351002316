@@ -11,6 +11,7 @@ public class Nomination {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String officerName;
     private String trainingTitle;
     private String departmentName;
@@ -18,13 +19,16 @@ public class Nomination {
     public Nomination() {
     }
 
-    public Nomination(String officerName, String trainingTitle, String departmentName) {
+    public Nomination(
+            String officerName,
+            String trainingTitle,
+            String departmentName) {
+
         this.officerName = officerName;
         this.trainingTitle = trainingTitle;
         this.departmentName = departmentName;
     }
 
-    // getters and setters
     public Long getId() {
         return id;
     }

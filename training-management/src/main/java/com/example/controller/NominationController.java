@@ -16,8 +16,7 @@ public class NominationController {
 
     private final NominationService nominationService;
 
-    public NominationController(
-            NominationService nominationService) {
+    public NominationController(NominationService nominationService) {
         this.nominationService = nominationService;
     }
 

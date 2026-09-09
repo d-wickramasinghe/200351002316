@@ -1,7 +1,7 @@
 package com.example.dto;
 
 public class NominationResponseDTO {
-    
+
     private Long id;
     private String officerName;
     private String trainingTitle;
@@ -10,14 +10,18 @@ public class NominationResponseDTO {
     public NominationResponseDTO() {
     }
 
-    public NominationResponseDTO(Long id, String officerName, String trainingTitle, String departmentName) {
+    public NominationResponseDTO(
+            Long id,
+            String officerName,
+            String trainingTitle,
+            String departmentName) {
+
         this.id = id;
         this.officerName = officerName;
         this.trainingTitle = trainingTitle;
         this.departmentName = departmentName;
     }
 
-    // getters and setters
     public Long getId() {
         return id;
     }

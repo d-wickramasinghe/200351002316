@@ -16,13 +16,16 @@ public class NominationRequestDTO {
     public NominationRequestDTO() {
     }
 
-    public NominationRequestDTO(String officerName, String trainingTitle, String departmentName) {
+    public NominationRequestDTO(
+            String officerName,
+            String trainingTitle,
+            String departmentName) {
+
         this.officerName = officerName;
         this.trainingTitle = trainingTitle;
         this.departmentName = departmentName;
     }
 
-    // getters and setters
     public String getOfficerName() {
         return officerName;
     }
@@ -46,5 +49,4 @@ public class NominationRequestDTO {
     public void setDepartmentName(String departmentName) {
         this.departmentName = departmentName;
     }
-    
 }

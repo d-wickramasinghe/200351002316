@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
+
     @ExceptionHandler(DuplicateNominationException.class)
     public ResponseEntity<String> handleDuplicate(
             DuplicateNominationException ex) {
@@ -15,5 +16,4 @@ public class GlobalExceptionHandler {
                 .status(HttpStatus.CONFLICT)
                 .body(ex.getMessage());
     }
-    
 }
